@@ -18,10 +18,7 @@ const addressSchema = new Schema({
 { _id: false });
 
 const opportunitySchema = new Schema({
-  guid: {
-    type: String,
-    unique: true // Ensure guid is unique
-  },
+  guid: String,
   name: String,
   est_revenue: Number,
   contact: String,
